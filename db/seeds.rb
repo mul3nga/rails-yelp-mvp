@@ -18,9 +18,17 @@ require 'faker'
 #   restaurant.save!
 # end
 
+# puts "Creating reviews"
+# 20.times do
+#   review = Review.new(
+#     rating: (0..5).to_a.sample,
+#     content: Faker::Restaurant.review,
+#     restaurant_id: (1..22).to_a.sample
+#   )
+#   review.save!
+# end
+# puts "Created reviews"
 
-# create_table "restaurants", force: :cascade do |t|
-#   t.string "name"
-#   t.string "address"
-#   t.string "phone_number"
-#   t.string "category"
+# t.integer "rating"
+# t.text "content"
+# t.integer "restaurant_id", null: false
